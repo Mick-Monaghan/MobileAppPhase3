@@ -28,3 +28,17 @@ footer
 
 
 /* site defualt styling */
+
+/* site default classes */
+.navbar
+{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar a div {
+    color: purple;
+}
+.navbar a div.active-tab
+{
+    color: violet;
+}
