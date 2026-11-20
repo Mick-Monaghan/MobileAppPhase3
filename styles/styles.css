@@ -1,10 +1,15 @@
 /* css file for global page styling */
 
-/* individual element defualt styling */
-/* p
+/* general styling */
+.flex-col
 {
-    margin: 8px 10px;
-} */
+    display: flex;
+}
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
 
 /* main page layout styling */
 body
