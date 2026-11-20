@@ -104,3 +104,19 @@ footer
 {
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+/* styling a flex boxs easier to setup */
+.flex-col
+{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+.justify-between
+{
+    justify-content: space-between;
+}
