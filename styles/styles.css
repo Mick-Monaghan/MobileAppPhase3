@@ -1,6 +1,6 @@
 /* css file to handle global styling */
 
-/* site defualt layout */
+/* main page layout */
 body
 {
     margin: 0;
@@ -26,19 +26,42 @@ footer
     background-color: blue;
 }
 
-
-/* site defualt styling */
-
-/* site default classes */
+/* navbar */
 .navbar
 {
     display: flex;
     justify-content: space-around;
 }
-.navbar a div {
+.navbar div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
     color: purple;
 }
-.navbar a div.active-tab
+.navbar img
 {
+    height: 60px;
+    width: 60px;
+}
+.navbar a
+{
+    text-decoration: none;
+}
+.navbar p
+{
+    margin: 0;
+    margin-top: 8px;
+    font-size: 14px;
+}
+.navbar .active-tab
+{
+    background-color: rgba(255, 255, 255, 0.2);
     color: violet;
+}
+.navbar div:hover
+{
+    background-color: rgba(0, 0, 0, 0.1);
 }
