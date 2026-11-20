@@ -1,6 +1,12 @@
-/* css file to handle global styling */
+/* css file for global page styling */
 
-/* main page layout */
+/* individual element defualt styling */
+p
+{
+    margin: 8px 10px;
+}
+
+/* main page layout styling */
 body
 {
     margin: 0;
@@ -26,7 +32,7 @@ footer
     background-color: blue;
 }
 
-/* navbar */
+/* navbar styling */
 .navbar
 {
     display: flex;
@@ -52,8 +58,6 @@ footer
 }
 .navbar p
 {
-    margin: 0;
-    margin-top: 8px;
     font-size: 14px;
 }
 .navbar .active-tab
