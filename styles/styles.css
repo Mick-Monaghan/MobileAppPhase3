@@ -206,3 +206,7 @@ footer
 {
     justify-content: space-between;
 }
+.subtitle {
+    font-size: 0.9em;
+    color: var(--color-text-secondary);
+}
