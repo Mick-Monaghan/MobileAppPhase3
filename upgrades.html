@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/flex-styling.css">
     <link rel="stylesheet" href="styles/upgrades.css">
 </head>
 <body>
@@ -12,7 +13,70 @@
         <h2>Upgrades</h2>
     </header>
     <main>
-        <p>[UPGRADES PAGE CONTENT]</p>
+        <!-- upgrade card template -->
+        <div class="upgrade-card flex-col">
+            <!-- top div -->
+            <div class="upgrade-details flex-row justify-between">
+                <div class="flex-row">
+                    <img
+                        class="upgrade-icon"
+                        src="images/placeholder_image.png"
+                        alt="upgrade icon"
+                    >
+                    <div class="flex-col">
+                        <h3>[upgrade name]</h3>
+                        <p>[copies owned]</p>
+                        <p>[upgrade info]</p>
+                    </div>
+                </div>
+                <p class="upgrade-effect">+$[num]/sec</p>
+            </div>
+            <!-- bottom div -->
+            <div class="buy-section flex-row justify-between">
+                <!-- buy x1 button -->
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x1</p>
+                    <p class="buy-cost">$[cost]</p>
+                </div>
+                <!-- buy all button -->
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy all</p>
+                    <p class="buy-cost">$[cost]</p>
+                </div>
+            </div>
+        </div>
+        <!-- copy/paste of template above -->
+        <div class="upgrade-card flex-col">
+            <!-- top div -->
+            <div class="upgrade-details flex-row justify-between">
+                <div class="flex-row">
+                    <img
+                        class="upgrade-icon"
+                        src="images/placeholder_image.png"
+                        alt="upgrade icon"
+                    >
+                    <div class="flex-col">
+                        <h3>[upgrade name]</h3>
+                        <p>[copies owned]</p>
+                        <p>[upgrade info]</p>
+                    </div>
+                </div>
+                <p class="upgrade-effect">+$[num]/sec</p>
+            </div>
+            <!-- bottom div -->
+            <div class="buy-section flex-row justify-between">
+                <!-- buy x1 button -->
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x1</p>
+                    <p class="buy-cost">$[cost]</p>
+                </div>
+                <!-- buy all button -->
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy all</p>
+                    <p class="buy-cost">$[cost]</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="navbar">
