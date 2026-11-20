@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/flex-styling.css">
     <link rel="stylesheet" href="styles/upgrades.css">
 </head>
 <body>
@@ -15,68 +14,29 @@
     <main>
         <!-- upgrade card template -->
         <div class="upgrade-card flex-col">
-            <!-- top div -->
-            <div class="upgrade-details flex-row justify-between">
-                <div class="flex-row">
-                    <img
-                        class="upgrade-icon"
-                        src="assets/images/placeholder_image.png"
-                        alt="upgrade icon"
-                    >
-                    <div class="flex-col">
-                        <h3>[upgrade name]</h3>
-                        <p>[copies owned]</p>
-                        <p>[upgrade info]</p>
-                    </div>
+            <div class="upgrade-details">
+                <div class="flex-row justify-between">
+                    <h3 class="upgrade-name">Cool Upgrade</h3>
+                    <p class="upgrade-count">(x5)</p>
                 </div>
-                <p class="upgrade-effect">+$[num]/sec</p>
+                <p class="upgrade-boost">gives +$10/sec per stack</p>
+                <p class="upgrade-effect">+$50/sec</p>
             </div>
             <!-- bottom div -->
             <div class="buy-section flex-row justify-between">
                 <!-- buy x1 button -->
                 <div class="buy-button flex-row justify-between">
-                    <p class="buy-count">buy x1</p>
-                    <p class="buy-cost">$[cost]</p>
+                    <p class="buy-count">buy x1:</p>
+                    <p class="buy-cost">$100</p>
                 </div>
                 <!-- buy all button -->
                 <div class="buy-button flex-row justify-between">
-                    <p class="buy-count">buy all</p>
-                    <p class="buy-cost">$[cost]</p>
+                    <p class="buy-count">buy max:</p>
+                    <p class="buy-cost">$11.5k</p>
                 </div>
             </div>
         </div>
         <!-- copy/paste of template above -->
-        <div class="upgrade-card flex-col">
-            <!-- top div -->
-            <div class="upgrade-details flex-row justify-between">
-                <div class="flex-row">
-                    <img
-                        class="upgrade-icon"
-                        src="assets/images/placeholder_image.png"
-                        alt="upgrade icon"
-                    >
-                    <div class="flex-col">
-                        <h3>[upgrade name]</h3>
-                        <p>[copies owned]</p>
-                        <p>[upgrade info]</p>
-                    </div>
-                </div>
-                <p class="upgrade-effect">+$[num]/sec</p>
-            </div>
-            <!-- bottom div -->
-            <div class="buy-section flex-row justify-between">
-                <!-- buy x1 button -->
-                <div class="buy-button flex-row justify-between">
-                    <p class="buy-count">buy x1</p>
-                    <p class="buy-cost">$[cost]</p>
-                </div>
-                <!-- buy all button -->
-                <div class="buy-button flex-row justify-between">
-                    <p class="buy-count">buy all</p>
-                    <p class="buy-cost">$[cost]</p>
-                </div>
-            </div>
-        </div>
     </main>
     <footer>
         <div class="navbar">
