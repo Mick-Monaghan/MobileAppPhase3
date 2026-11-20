@@ -21,8 +21,12 @@
     --color-background: #FFEFD3;
     --color-header: #FFD285;
     --color-footer: #FFD285;
+    --color-card: #3D6AB8;
+    --color-button: #1ea76c;
     --color-text: #0a0a0f;
+    --color-text-on-card: #FFFDFD;
     --color-text-secondary: #1f1c36;
+    --color-progress-fill: #99B2DD;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -43,6 +47,10 @@ body
     margin: 0;
     font-family: "Nunito";
     font-weight: 600;
+}
+
+button {
+    font-family: "Nunito";
 }
 header, main, footer
 {
@@ -114,4 +122,70 @@ footer
 .subtitle {
     font-size: 0.9em;
     color: var(--color-text-secondary);
+}
+
+/* add button */
+.add-button {
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0.8em 0;
+    margin: 1em 0;
+    color: var(--color-text-on-card);
+    box-shadow: 0 9px color-mix(in oklab, var(--color-button) 80%, black);
+    transition: all 0.1s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.add-button:hover {
+    background-color: color-mix(in oklab, var(--color-button) 95%, black);
+    box-shadow: 0 6px color-mix(in oklab, var(--color-button) 80%, black);
+    transform: translateY(3px);
+}
+
+.add-button:active {
+    background-color: color-mix(in oklab, var(--color-button) 90%, black);
+    box-shadow: 0 3px color-mix(in oklab, var(--color-button) 80%, black);
+    transform: translateY(6px);
+}
+
+/* cards */
+.card {
+    background-color: var(--color-card);
+    padding: 2em;
+    border-radius: 16px;
+    box-shadow: 0 9px color-mix(var(--color-card) 90%, black);
+}
+
+.card > h2 {
+    color: var(--color-text-on-card);
+    padding-bottom: 1em;
+}
+
+/* progress bars */
+.progress-bar {
+    width: 100%;
+    height: 2em;
+    background-color: #2B2D42;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: var(--color-progress-fill);
+}
+
+.fill-half {
+    width: 50%;
+}
+
+.fill-third {
+    width: calc(100% / 3);
+}
+
+.text-center {
+    text-align: center;
 }

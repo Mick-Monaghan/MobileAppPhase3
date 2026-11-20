@@ -1,4 +1,7 @@
 /* css file to make styling a flex box easier */
+.flex {
+    display: flex;
+}
 .flex-col
 {
     display: flex;
@@ -12,4 +15,7 @@
 .justify-between
 {
     justify-content: space-between;
+}
+.gap {
+    gap: 1em;
 }
