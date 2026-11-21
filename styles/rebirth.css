@@ -1,1 +1,23 @@
 /* css file for styling the rebirth page (rebirth.html) */
+
+.rebirth-center-container {
+    position: relative;
+    height: 100%;
+}
+
+.rebirth-popup {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: 3px solid black;
+    background-color: white;
+}
+
+/* higher z-index to make sure the div(s) below them are properly positioned */
+.rebirth-bars {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
