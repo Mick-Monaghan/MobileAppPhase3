@@ -1,82 +1,168 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="stylesheet" href="styles/upgrades.css" />
-    </head>
-    <body>
-        <header>
-            <h2>Upgrades</h2>
-        </header>
-        <main>
-            <!-- upgrade card template -->
-            <div class="upgrade-card flex-col">
-                <div class="upgrade-details">
-                    <div class="flex-row justify-between">
-                        <h3 class="upgrade-name">Cool Upgrade</h3>
-                        <p class="upgrade-count">(x5)</p>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/upgrades.css">
+</head>
+<body>
+    <header>
+        <h2>Upgrades</h2>
+    </header>
+    <main>
+        <div class="upgrade-card flex-col">
+            <div class="upgrade-details">
+                <div class="upgrade-header flex-row justify-between">
+                    <h3 class="upgrade-name">Basic Upgrade</h3>
+                    <p class="upgrade-count">(x6)</p>
+                </div>
+                <div class="upgrade-info">
+                    <p class="upgrade-boost">gives +$1/sec per stack</p>
+                    <p class="upgrade-effect">+$6/sec</p>
+                </div>
+            </div>
+            <div class="buy-section flex-row justify-start">
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x1:</p>
+                    <p class="buy-cost">$10</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x5:</p>
+                    <p class="buy-cost">$50</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x10:</p>
+                    <p class="buy-cost">$100</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy max:</p>
+                    <p class="buy-cost">$1k</p>
+                </div>
+            </div>
+        </div>
+        <div class="upgrade-card flex-col">
+            <div class="upgrade-details">
+                <div class="upgrade-header flex-row justify-between">
+                    <h3 class="upgrade-name">Cool Upgrade</h3>
+                    <p class="upgrade-count">(x3)</p>
+                </div>
+                <div class="upgrade-info">
                     <p class="upgrade-boost">gives +$10/sec per stack</p>
-                    <p class="upgrade-effect">+$50/sec</p>
-                </div>
-                <!-- bottom div -->
-                <div class="buy-section flex-row justify-between">
-                    <!-- buy x1 button -->
-                    <div class="buy-button flex-row justify-between">
-                        <p class="buy-count">buy x1:</p>
-                        <p class="buy-cost">$100</p>
-                    </div>
-                    <!-- buy all button -->
-                    <div class="buy-button flex-row justify-between">
-                        <p class="buy-count">buy max:</p>
-                        <p class="buy-cost">$11.5k</p>
-                    </div>
+                    <p class="upgrade-effect">+$30/sec</p>
                 </div>
             </div>
-            <!-- copy/paste of template above -->
-        </main>
-        <footer>
-            <div class="navbar">
-                <a href="index.html">
-                    <div>
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="main tab icon"
-                        />
-                        <p>MAIN</p>
-                    </div>
-                </a>
-                <a href="upgrades.html">
-                    <div class="active-tab">
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="upgrades tab icon"
-                        />
-                        <p>UPGRADES</p>
-                    </div>
-                </a>
-                <a href="rebirth.html">
-                    <div>
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="rebirth tab icon"
-                        />
-                        <p>REBIRTH</p>
-                    </div>
-                </a>
-                <a href="permanent.html">
-                    <div clas="active-tab">
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="permanent tab icon"
-                        />
-                        <p>PERMANENT</p>
-                    </div>
-                </a>
+            <div class="buy-section flex-row justify-start">
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x1:</p>
+                    <p class="buy-cost">$100</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x5:</p>
+                    <p class="buy-cost">$500</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x10:</p>
+                    <p class="buy-cost">$1k</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy max:</p>
+                    <p class="buy-cost">$10k</p>
+                </div>
             </div>
-        </footer>
-    </body>
+        </div>
+        <div class="upgrade-card flex-col">
+            <div class="upgrade-details">
+                <div class="upgrade-header flex-row justify-between">
+                    <h3 class="upgrade-name">Super Upgrade</h3>
+                    <p class="upgrade-count">(x0)</p>
+                </div>
+                <div class="upgrade-info">
+                    <p class="upgrade-boost">gives +$25/sec per stack</p>
+                    <p class="upgrade-effect">+$0/sec</p>
+                </div>
+            </div>
+            <div class="buy-section flex-row justify-start">
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x1:</p>
+                    <p class="buy-cost">$250</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x5:</p>
+                    <p class="buy-cost">$1.25k</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x10:</p>
+                    <p class="buy-cost">$2.5k</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy max:</p>
+                    <p class="buy-cost">$7.5k</p>
+                </div>
+            </div>
+        </div>
+        <div class="upgrade-card flex-col">
+            <div class="upgrade-details">
+                <div class="upgrade-header flex-row justify-between">
+                    <h3 class="upgrade-name">Mega Upgrade</h3>
+                    <p class="upgrade-count">(x0)</p>
+                </div>
+                <div class="upgrade-info">
+                    <p class="upgrade-boost">gives +$100/sec per stack</p>
+                    <p class="upgrade-effect">+$0/sec</p>
+                </div>
+            </div>
+            <div class="buy-section flex-row justify-start">
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x1:</p>
+                    <p class="buy-cost">$1k</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x5:</p>
+                    <p class="buy-cost">$5k</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy x10:</p>
+                    <p class="buy-cost">$10k</p>
+                </div>
+                <div class="buy-button flex-row justify-between">
+                    <p class="buy-count">buy max:</p>
+                    <p class="buy-cost">$25k</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="navbar">
+            <a href="index.html">
+                <div>
+                    <img
+                        src="assets/images/placeholder_image.png"
+                        alt="main tab icon"
+                    >
+                    <p>MAIN</p>
+                </div>
+            </a>
+            <a href="upgrades.html">
+                <div class="active-tab">
+                    <img
+                        src="assets/images/placeholder_image.png"
+                        alt="upgrades tab icon"
+                    >
+                    <p>UPGRADES</p>
+                </div>
+            </a>
+            <a href="rebirth.html">
+                <div>
+                    <img
+                        src="assets/images/placeholder_image.png"
+                        alt="rebirth tab icon"
+                    >
+                    <p>REBIRTH</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
 </html>
