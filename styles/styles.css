@@ -96,6 +96,8 @@ footer
     width: 100px;
     height: 100px;
     color: var(--color-text);
+    border-radius: 8px;
+    transition: background-color 0.1s;
 }
 .navbar img
 {

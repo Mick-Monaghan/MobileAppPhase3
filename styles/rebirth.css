@@ -13,8 +13,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid black;
+    border: 3px solid #5d2086;
     background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
 }
 
 /* higher z-index to make sure the div(s) below them are properly positioned */
