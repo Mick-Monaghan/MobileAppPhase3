@@ -85,16 +85,16 @@ footer
 /* navbar styling */
 .navbar
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
+    gap: 1em;
 }
 .navbar div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
     color: var(--color-text);
     border-radius: 8px;
     transition: background-color 0.1s;
