@@ -1,58 +1,80 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="styles/styles.css" />
-        <link rel="stylesheet" href="styles/rebirth.css" />
-    </head>
-    <body>
-        <header>
-            <h2>Rebirth</h2>
-        </header>
-        <main>
-            <p>[REBIRTH PAGE CONTENT]</p>
-        </main>
-        <footer>
-            <div class="navbar">
-                <a href="index.html">
-                    <div>
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="main tab icon"
-                        />
-                        <p>MAIN</p>
-                    </div>
-                </a>
-                <a href="upgrades.html">
-                    <div>
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="upgrades tab icon"
-                        />
-                        <p>UPGRADES</p>
-                    </div>
-                </a>
-                <a href="rebirth.html">
-                    <div class="active-tab">
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="rebirth tab icon"
-                        />
-                        <p>REBIRTH</p>
-                    </div>
-                </a>
-                <a href="permanent.html">
-                    <div clas="active-tab">
-                        <img
-                            src="assets/images/placeholder_image.png"
-                            alt="permanent tab icon"
-                        />
-                        <p>PERMANENT</p>
-                    </div>
-                </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rebirth.css">
+</head>
+<body>
+    <header class="rebirth-bars">
+        <h2>Rebirth</h2>
+    </header>
+    <main class="rebirth-center-container">
+        <div class="rebirth-popup rebirth-text">
+            <div class="rebirth-title">
+                <h2>Be reborn</h2>
+                <p>Start over, now wiser.</p>
             </div>
-        </footer>
-    </body>
+            <div class="rebirth-content">
+                <div>
+                    <p>Once you restart, you will gain:</p>
+                    <div class="rebirth-vip-paragraph">
+                        <p class="rebirth-num">5</p>
+                        <i>Prestige points</i>
+                    </div>
+                </div>
+                <div>
+                    <p>You can use these points for permanent upgrades.<br>Choose wisely.</p>
+                </div>
+                <div class="rebirth-vip-paragraph">
+                    <div class="rebirth-button">
+                        Proceed
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="rebirth-bars">
+        <div class="navbar">
+            <a href="index.html">
+                <div>
+                    <img
+                        src="assets/images/factory.svg"
+                        alt="main tab icon"
+                    >
+                    <p>MAIN</p>
+                </div>
+            </a>
+            <a href="upgrades.html">
+                <div>
+                    <img
+                        src="assets/images/star.svg"
+                        alt="upgrades tab icon"
+                    >
+                    <p>UPGRADES</p>
+                </div>
+            </a>
+            <a href="rebirth.html">
+                <div class="active-tab">
+                    <img
+                        src="assets/images/reset.svg"
+                        alt="rebirth tab icon"
+                    >
+                    <p>REBIRTH</p>
+                </div>
+            </a>
+            <a href="permanent.html">
+                <div>
+                    <img
+                        src="assets/images/crown.svg"
+                        alt="permanent tab icon"
+                    />
+                    <p>PERMANENT</p>
+                </div>
+            </a>
+        </div>
+    </footer>
+</body>
 </html>

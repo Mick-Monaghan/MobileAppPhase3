@@ -21,16 +21,27 @@
     --color-background: #FFEFD3;
     --color-header: #FFD285;
     --color-footer: #FFD285;
-    --color-text: #2B2D42;
+    --color-card: #3D6AB8;
+    --color-button: #1ea76c;
+    --color-text: #0a0a0f;
+    --color-text-on-card: #FFFDFD;
+    --color-text-secondary: #1f1c36;
+    --color-progress-fill: #99B2DD;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--color-text);
 }
 
 /* individual element default styling */
 p
 {
     line-height: 1.5em;
-    color: var(--color-text);
     font-size: 1.1em;
 }
+
+/* general styling */
+
 
 /* main page layout styling */
 body
@@ -38,6 +49,10 @@ body
     margin: 0;
     font-family: "Nunito";
     font-weight: 600;
+}
+
+button {
+    font-family: "Nunito";
 }
 header, main, footer
 {
@@ -51,6 +66,7 @@ header
     background-color: var(--color-header);
     padding: 20px;
     box-shadow: 0 2px 4px var(--shadow-color);
+    text-align: center;
 }
 main
 {
@@ -69,17 +85,19 @@ footer
 /* navbar styling */
 .navbar
 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-around;
+    gap: 1em;
 }
 .navbar div {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
     color: var(--color-text);
+    border-radius: 8px;
+    transition: background-color 0.1s;
 }
 .navbar img
 {
@@ -105,6 +123,73 @@ footer
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.subtitle {
+    font-size: 0.9em;
+    color: var(--color-text-secondary);
+}
+
+/* add button */
+.add-button {
+    background-color: var(--color-button);
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    padding: 0.8em 0;
+    margin: 1em 0;
+    color: var(--color-text-on-card);
+    box-shadow: 0 9px color-mix(in oklab, var(--color-button) 80%, black);
+    transition: all 0.1s;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.add-button:hover {
+    background-color: color-mix(in oklab, var(--color-button) 95%, black);
+    box-shadow: 0 6px color-mix(in oklab, var(--color-button) 80%, black);
+    transform: translateY(3px);
+}
+
+.add-button:active {
+    background-color: color-mix(in oklab, var(--color-button) 90%, black);
+    box-shadow: 0 3px color-mix(in oklab, var(--color-button) 80%, black);
+    transform: translateY(6px);
+}
+
+/* cards */
+.card {
+    background-color: #fce8d1;
+    margin: 15px 5px;
+    border-radius: 16px;
+    /* box-shadow: 0 9px color-mix(var(--color-card) 90%, black); */
+    border: 4px solid #5d2086;
+    padding: 8px;
+}
+
+/* progress bars */
+.progress-bar {
+    width: 100%;
+    height: 2em;
+    background-color: #2B2D42;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #f58fc0;
+}
+
+.fill-half {
+    width: 50%;
+}
+
+.fill-third {
+    width: calc(100% / 3);
+}
+
+.text-center {
+    text-align: center;
+}
 /* styling a flex boxs easier to setup */
 .flex-col
 {
@@ -119,4 +204,25 @@ footer
 .justify-between
 {
     justify-content: space-between;
+}
+.subtitle {
+    font-size: 0.9em;
+    color: var(--color-text-secondary);
+}
+
+.card > h2
+{
+    margin: 5px 0px;
+    padding: 0px 10px;
+    border-radius: 15px;
+    background-color: #ffd1e8; /* soft pink pill */
+}
+
+.bars
+{
+    margin: 5px 0px 8px;
+    padding: 8px 12px;
+    border: 3px solid #53227c;
+    border-radius: 15px;
+    background-color: #fff0b8; /* light lemon */
 }
